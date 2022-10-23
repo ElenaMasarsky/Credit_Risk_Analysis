@@ -43,16 +43,16 @@ These are the results for all six machine learning models describing the balance
 * Recall: High/Low risk = 0.72/0.57
 
 ### Easy Ensemble AdaBoost Classifier
-
+![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Easy_Ensemble_AdaBoost_Classifier.png)  
 * Balanced Accuracy: 0.9316600714093861
 * Precision:  High/Low risk = 0.09/1.00   
 * Recall: High/Low risk = 0.92/0.94
 
 
-Summary:
+## Summary:  
 When working with balanced accuracy, the highest compared accuracy closest to 1 is the best machine learning model. Balanced accuracy for all models exept Easy Ensemble AdaBoost Classifier gave us pretty low results.
 All models showed low precision for high-risk loans and high for low-risk loans.
-The best result of recall showed us the Easy Ensemble AdaBoost Classifier with the score for high and low risk 0.92/0.94 accordingly.
+The best result of recall showed us the Easy Ensemble AdaBoost Classifier with the score for high and low risk 0.92/0.94 accordingly.  
 The Easy Ensemble AdaBoost Classifier is the best machine learning model for this analysis.
 
 
