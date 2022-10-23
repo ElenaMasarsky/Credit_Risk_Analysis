@@ -14,48 +14,41 @@ Then, we use a combinatorial approach of over- and undersampling using the SMOTE
 to predict credit risk. Once we're done, we evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Results:
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+These are the results for all six machine learning models describing the balanced accuracy scores and the precision and recall scores of all six machine learning models.
+
 ### Naive Random Oversampling
+![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Naive%20Random%20Oversampling.png)  
+* Balanced Accuracy: 0.6463970560994359  
+* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Recall: High/Low risk = 0.71/0.58  
 
-Balanced Accuracy: 0.6612700484668286
-Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-Recall: High/Low risk = .66/.67
 ### SMOTE Oversampling
+![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Naive%20Random%20Oversampling.png)  
+* Balanced Accuracy: 0.6463970560994359 
+* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Recall: High/Low risk = 0.71/0.58  
 
-Balanced Accuracy: 0.6612700484668286
-Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-Recall: High/Low risk = .66/.67
 
 ### Undersampling
+![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Undersampling.png)  
+* Balanced Accuracy: 0.5447339051023905
+* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Recall: High/Low risk = 0.69/0.40  
 
-Balanced Accuracy: 0.6612700484668286
-Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-Recall: High/Low risk = .66/.67
 
-### Combination Under-Over Sampling
+### Combination (Over and Under) Sampling
 
-Balanced Accuracy: 0.6612700484668286
-Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-Recall: High/Low risk = .66/.67
+* Balanced Accuracy: 0.6612700484668286
+* Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+* Recall: High/Low risk = .66/.67
 
 ### Easy Ensemble AdaBoost Classifier
 
-Balanced Accuracy: 0.6612700484668286
-Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-Recall: High/Low risk = .66/.67
+* Balanced Accuracy: 0.6612700484668286
+* Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+* Recall: High/Low risk = .66/.67
+
 
 Summary:
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
 
-When working with balanced accuracy, the highest compared accuracy between 0 and 1 and is closest to 1 is the best machine learning model. For the credit card data set, the Easy Ensemble AdaBoost Classifier is the best model to choose with its .93 balanced accuracy.
-The other models were below .80 balanced accuracy. The precision for all models were similar and within an appropriate range. The recall score also needs to fall within 0 and 1, with numbers closer to 1 being the better model.
-The Easy Ensemble AdaBoost Classifier had the highest recall score, making it the final best machine learning model to choose for further credit card analysis.
-
-When working with balanced accuracy, the highest compared accuracy closest to 1 is the best machine learning model. For the credit card data set, the Easy Ensemble AdaBoost Classifier is the best model to choose with its .93 balanced accuracy.
-The other models were below .78 balanced accuracy. For the recall score, the numbers closer to 1 would be the better model. The Easy Ensemble AdaBoost Classifier had the highest recall score (0.91/0.94).
-The Easy Ensemble AdaBoost Classifier is the best machine learning model according to my analysis.
-
-All models with resampling data showed pretty low accuracy score, but in the imbalanced classification report we can see that all models predicted low_risk better and a presision rate is 1 in all reports. 
-The SMOTE model has better F1 score which is 0.81 and could be a possible choise for choosing a model for predictions in the certain circumstances.
- The models with Ensemble Learners showed better results, especially EasyEnsembleClassifier showed accuracy score as 0,93 which is the highest from all the models, Also, its presision and F1 scores looks pretty high.
- So from all the presented models in this challenge the EasyEnsembleClassifier is recomendation to use.
