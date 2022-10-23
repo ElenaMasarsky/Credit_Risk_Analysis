@@ -14,41 +14,45 @@ Then, we use a combinatorial approach of over- and undersampling using the SMOTE
 to predict credit risk. Once we're done, we evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Results:
-These are the results for all six machine learning models describing the balanced accuracy scores and the precision and recall scores of all six machine learning models.
+These are the results for all six machine learning models describing the balanced accuracy scores, the precision, and recall scores.
 
 ### Naive Random Oversampling
 ![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Naive%20Random%20Oversampling.png)  
 * Balanced Accuracy: 0.6463970560994359  
-* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Precision:  High/Low risk = 0.01/1.00  
 * Recall: High/Low risk = 0.71/0.58  
 
 ### SMOTE Oversampling
 ![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Naive%20Random%20Oversampling.png)  
 * Balanced Accuracy: 0.6463970560994359 
-* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Precision:  High/Low risk = 0.01/1.00 
 * Recall: High/Low risk = 0.71/0.58  
 
 
 ### Undersampling
 ![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Undersampling.png)  
 * Balanced Accuracy: 0.5447339051023905
-* Precision:  High/Low risk = 0.01/1.00 The precision is low for High-risk loans and is high for Low-risk loans.  
+* Precision:  High/Low risk = 0.01/1.00 
 * Recall: High/Low risk = 0.69/0.40  
 
 
 ### Combination (Over and Under) Sampling
-
-* Balanced Accuracy: 0.6612700484668286
-* Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-* Recall: High/Low risk = .66/.67
+![pic](https://github.com/ElenaMasarsky/Credit_Risk_Analysis/blob/main/Resources/Combination_Over_and_Under_Sampling.png)  
+* Balanced Accuracy: 0.6480442302883235
+* Precision:  High/Low risk = 0.01/1.00 
+* Recall: High/Low risk = 0.72/0.57
 
 ### Easy Ensemble AdaBoost Classifier
 
-* Balanced Accuracy: 0.6612700484668286
-* Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-* Recall: High/Low risk = .66/.67
+* Balanced Accuracy: 0.9316600714093861
+* Precision:  High/Low risk = 0.09/1.00   
+* Recall: High/Low risk = 0.92/0.94
 
 
 Summary:
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+When working with balanced accuracy, the highest compared accuracy closest to 1 is the best machine learning model. Balanced accuracy for all models exept Easy Ensemble AdaBoost Classifier gave us pretty low results.
+All models showed low precision for high-risk loans and high for low-risk loans.
+The best result of recall showed us the Easy Ensemble AdaBoost Classifier with the score for high and low risk 0.92/0.94 accordingly.
+The Easy Ensemble AdaBoost Classifier is the best machine learning model for this analysis.
+
 
